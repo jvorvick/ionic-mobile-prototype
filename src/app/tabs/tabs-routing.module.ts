@@ -8,27 +8,43 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'broadcast',
+        loadChildren: () => import('../broadcast/broadcast.module').then( m => m.BroadcastPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'collect',
+        loadChildren: () => import('../collect/collect.module').then( m => m.CollectPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'plan',
+        loadChildren: () => import('../plan/plan.module').then( m => m.PlanPageModule)
+      },
+      {
+        path: 'settle',
+        loadChildren: () => import('../settle/settle.module').then( m => m.SettlePageModule)
+      },
+      {
+        path: 'connect',
+        loadChildren: () => import('../connect/connect.module').then( m => m.ConnectPageModule)
+      },
+      {
+        path: 'timeline',
+        loadChildren: () => import('../timeline/timeline.module').then( m => m.TimelinePageModule)
+      },
+      {
+        path: 'explore',
+        loadChildren: () => import('../explore/explore.module').then( m => m.ExplorePageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/connect',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/connect',
     pathMatch: 'full'
   }
 ];
