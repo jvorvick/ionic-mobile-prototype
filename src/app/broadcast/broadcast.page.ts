@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BroadcastPage implements OnInit {
 
+  face1 = 'assets/images/faces/face1.png';
+
   constructor() { }
 
   ngOnInit() {
