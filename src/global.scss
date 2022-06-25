@@ -43,3 +43,13 @@ ion-title {
   font-size: 16px;
   font-weight: normal;
 }
+
+ion-searchbar {
+  --background: white !important;
+}
+
+img {
+  width: 36px;
+  border: 1px solid black;
+  border-radius: 36px;
+}
